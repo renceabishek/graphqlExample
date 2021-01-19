@@ -1,0 +1,32 @@
+type Query {
+    students: [Student]
+}
+
+type Student {
+    id: Int
+    name: String
+    standard: Std
+    address: Address
+    results(year: Int): [Result]
+}
+
+enum Std {
+    FIRST,
+    SECOND,
+    THIRD,
+    FOURTH
+}
+
+type Address {
+    street: String
+    city: String
+    state: String
+}
+
+type Result {
+    year: Int
+    percentage: String
+    success: Boolean
+    topSubject: String
+    subjects: [String]
+}
