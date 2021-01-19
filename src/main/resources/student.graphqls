@@ -2,6 +2,24 @@ type Query {
     students: [Student]
 }
 
+type Mutation {
+    createStudentDetails(student: StudentPost): StudentPayload
+}
+
+type StudentPayload {
+    payloadStatus: PayloadStatus
+}
+
+enum PayloadStatus {
+    OK,
+    NOK
+}
+
+input StudentPost {
+    name: String
+    standard: Std
+}
+
 type Student {
     id: Int
     name: String

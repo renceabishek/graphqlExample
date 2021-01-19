@@ -53,4 +53,9 @@ public class StudentServiceImp implements StudentService {
         return Arrays.asList("TAMIL","ENGLISH","MATHS");
     }
 
+    @Override
+    public StudentPayload createStudentDetails(StudentPost studentPost) {
+        return StudentPayload.builder().payloadStatus(PayloadStatus.OK).build();
+    }
+
 }
