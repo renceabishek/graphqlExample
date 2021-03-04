@@ -5,6 +5,7 @@ import com.graphql.StudentGraphql.model.Student;
 import com.graphql.StudentGraphql.service.StudentService;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.util.List;
 
 @Component
@@ -16,7 +17,7 @@ public class Query implements GraphQLQueryResolver {
         this.studentService = studentService;
     }
 
-    public List<Student> students() {
+    public List<Student> students() throws IOException {
         return studentService.getAllStudents();
     }
 
