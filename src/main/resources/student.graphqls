@@ -1,3 +1,5 @@
+scalar Short
+
 type Query {
     students: [Student]
 }
@@ -21,7 +23,7 @@ input StudentPost {
 }
 
 type Student {
-    id: Int
+    id: Short
     name: String
     standard: Std
     address: Address

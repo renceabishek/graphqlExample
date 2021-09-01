@@ -9,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 public class Student {
 
-    private int id;
+    private Short id;
     private String name;
     private Std standard;
 }

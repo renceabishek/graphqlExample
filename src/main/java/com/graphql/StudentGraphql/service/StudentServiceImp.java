@@ -40,7 +40,7 @@ public class StudentServiceImp implements StudentService {
     }
 
     @Override
-    public Address fetchAddress(int id) {
+    public Address fetchAddress(long id) {
         //throw new NullPointerException();
             return new Address(id,"ra","Chennai","TN");
     }

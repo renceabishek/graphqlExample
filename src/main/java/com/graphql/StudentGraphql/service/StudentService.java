@@ -9,7 +9,7 @@ public interface StudentService {
 
     List<Student> getAllStudents() throws IOException;
 
-    Address fetchAddress(int id);
+    Address fetchAddress(long id);
 
     List<Result> results(int year);
 

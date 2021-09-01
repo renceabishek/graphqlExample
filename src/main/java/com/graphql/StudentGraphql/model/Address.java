@@ -9,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 public class Address {
 
-    private int id;
+    private long id;
     private String street;
     private String city;
     private String state;

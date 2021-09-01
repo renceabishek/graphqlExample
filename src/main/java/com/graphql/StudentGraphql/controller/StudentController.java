@@ -19,7 +19,7 @@ public class StudentController {
     public List<Student> getAllStudents() {
         List<Student> st = IntStream.range(0,2).mapToObj(f-> {
             Student student=new Student();
-            student.setId(f);
+            student.setId((short)f);
             student.setStandard(Std.FIRST);
             //student.setAddress(new Address(f,"ra","Chennai","TN"));
             return student;
